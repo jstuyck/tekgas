@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>Nitrox calculator</mat-card-title>
+    <mat-card-content>
+        <form class="example-form">
+            <div class="d-flex p-2">
+                <mat-form-field>
+                    <input matInput placeholder="Max PpO2" value="{{ dConst.DEF_PPO2 | number: '1.1-2' }}" type="number" [formControl]="ppo2" required>
+                    <button mat-button *ngIf="ppo2" matSuffix mat-icon-button aria-label="Clear" (click)="ppo2=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+            <div class="d-flex p-2">
+                <mat-form-field>
+                    <input matInput placeholder="O2% in gas" value="{{ dConst.AIR_O2_PERC | number: '1.0' }}" type="number" [formControl]="perco2" required>
+                    <button mat-button *ngIf="perco2" matSuffix mat-icon-button aria-label="Clear" (click)="perco2=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
+        </form>
+        <div class="d-flex p-2">
+            <span>Max depth : {{  GetMaxDepth() | number: '1.1-2' }} m</span>
+        </div>
+    </mat-card-content>
+</mat-card>

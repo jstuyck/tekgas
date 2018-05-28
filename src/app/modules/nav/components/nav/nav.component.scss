@@ -1,0 +1,11 @@
+.menu {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.button{
+    margin: auto; 
+    flex-grow: initial;
+}
+

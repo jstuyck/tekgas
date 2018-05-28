@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   // tslint:disable-next-line:component-selector
   selector: 'nav',
   templateUrl: 'nav.component.html',
-  // styleUrls: ['nested-menu-example.css']
+  styleUrls: ['nav.component.scss']
 })
 export class NavComponent { }
