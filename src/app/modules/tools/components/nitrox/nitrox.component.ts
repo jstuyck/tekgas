@@ -10,15 +10,15 @@ import { DiveConstant } from '@app/modules/shared/models/constant';
 })
 
 export class NitroxComponent {
-    private dConst =  DiveConstant;
+    dConst =  DiveConstant;
 
-    private ppo2: FormControl = new FormControl('value', [
+    ppo2: FormControl = new FormControl('value', [
         Validators.max(2.2),
         Validators.min(0),
         Validators.required
     ]);
 
-    private perco2: FormControl = new FormControl('value', [
+    perco2: FormControl = new FormControl('value', [
         Validators.max(100),
         Validators.min(0),
         Validators.required
