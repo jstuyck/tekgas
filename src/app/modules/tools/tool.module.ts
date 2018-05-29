@@ -4,6 +4,7 @@ import { HomeRoutingModule } from '@app/modules/home/home-routing.module';
 import { ToolRoutingModule } from '@app/modules/tools/tool-routing.module';
 import { NitroxComponent } from '@app/modules/tools/components/nitrox/nitrox.component';
 import { SharedModule } from '@app/modules/shared/shared.module';
+import { TrimixComponent } from '@app/modules/tools/components/trimix/trimix.component';
 
 @NgModule({
     imports: [
@@ -11,7 +12,8 @@ import { SharedModule } from '@app/modules/shared/shared.module';
         ToolRoutingModule
     ],
     declarations: [
-        NitroxComponent
+        NitroxComponent,
+        TrimixComponent
     ],
     exports: [
         NitroxComponent

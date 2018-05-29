@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatGridListModule, MatDividerModule } from '@angular/material';
 import {MatButtonModule, MatCheckboxModule, MatMenuModule, MatToolbarModule, MatCardModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -16,6 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatInputModule,
     MatIconModule,
+    MatGridListModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule],
@@ -28,6 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatInputModule,
     MatIconModule,
+    MatGridListModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule],
